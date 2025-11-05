@@ -14,10 +14,15 @@ function naoUrgente(){
   } else {
     novaNota.style.color = "purple"
   }
-  var div = document.getElementById("nUrgente")
-    div.appendChild(novaNota)
-  count_color++
-  document.getElementById("nota").value = ""
+    if(document.getElementById("nota").value == ""){
+        alert("Insira uma nota")
+    }else{
+        var div = document.getElementById("nUrgente")
+        div.appendChild(novaNota)
+        count_color++
+        document.getElementById("nota").value = ""
+    }
+ 
 }
 
 function Urgente(){
@@ -70,3 +75,4 @@ function apagarUrgente(){
     li.innerHTML=""
 
 }
+
