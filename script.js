@@ -41,20 +41,22 @@ function Urgente(){
 }
 
 function removerN(){
-    var li = document.getElementById("listaN")
-    if(li){
-        li.remove()
-    }else{
-    alert("Não há texto para remover")    
+    var div = document.getElementById("nUrgente");
+    var li = div.lastElementChild; // Obtém o último <li> da lista
+    if (li) {
+        li.remove(); // Remove o último item
+    } else {
+        alert("Não há texto para remover");
     }
 }
 
 function removerUrgente(){
-    var li=document.getElementById("listaUrgente")
-    if(li){
-        li.remove()
-    }else{
-    alert("Não há texto para remover")    
+    var div = document.getElementById("Urgente");
+    var li = div.lastElementChild; // Obtém o último <li> da lista
+    if (li) {
+        li.remove(); // Remove o último item
+    } else {
+        alert("Não há texto para remover");
     }
 }
 
@@ -66,4 +68,5 @@ function apagarN(){
 function apagarUrgente(){
     var li=document.getElementById("Urgente")
     li.innerHTML=""
+
 }
