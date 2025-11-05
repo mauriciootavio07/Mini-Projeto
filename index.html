@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notas Rápidas</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="campoAnotacao">
+        <label for="Notas">NOTA:</label> <br>
+        <input type="text" id="nota"><br>
+        <input type="button" id="naoUrgente" value="Não urgente" onclick="naoUrgente()">
+        <input type="button" id="naoUrgente" value="Urgentes" onclick="Urgente()">
+    </div>
+
+   <div class="Anotacoes">
+  <div class="box">
+    
+    <div class="coluna">
+      <h2>Não Urgente</h2>
+      <div id="nUrgente"><ul></ul></div>
+      <div class="remover_nao_urgente">
+        <div class="align_buttons">
+          <input type="button" id="RemoverN" value="Remover Item" onclick="removerN()">
+          <input type="button" id="RemoverTudoN" value="Apagar Lista" onclick="apagarN()">
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="coluna">
+      <h2>Urgente</h2>
+      <div id="Urgente"><ul></ul></div>
+      <div class="remover_urgente">
+        <div class="align_buttons">
+          <input type="button" id="RemoverUrgente" value="Remover Item" onclick="removerUrgente()">
+          <input type="button" id="RemoverTudoU" value="Apagar Lista" onclick="apagarUrgente()">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    <script type="text/javascript" src="../js/script.js"></script>
+</body>
+</html>
